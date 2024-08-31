@@ -17,7 +17,7 @@ def make_request(url, headers, cookies):
 def index():
     if request.method == 'POST':
         password = request.form['password']
-        if password == "Devil 789":
+        if password == "Asad 333":
             return redirect(url_for('dashboard'))
         else:
             return render_template('index.html', error="Incorrect Password! Try again.")
@@ -90,4 +90,4 @@ def dashboard():
 
 if __name__ == '__main__':
     os.makedirs('uploads', exist_ok=True)
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5000)
